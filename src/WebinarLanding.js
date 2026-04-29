@@ -32,7 +32,7 @@ const WebinarLanding = () => {
         <div className="max-w-6xl mx-auto w-full relative z-10 py-10 text-left">
           <h1 className="text-5xl md:text-8xl font-extrabold mb-8 leading-[1.2] tracking-tight text-white">
             AI in Global Marketing:<br />
-            Innovation, Workforce<br />
+            Innovation, Workforce,<br />
             & Ethics
           </h1>
 
