@@ -87,7 +87,7 @@ const WebinarLanding = () => {
           <h2 className="text-6xl md:text-8xl font-black text-[#7D5FFF] uppercase leading-[0.9] mb-12 tracking-tighter">Keynote<br />Speaker</h2>
           <div className="max-w-md">
             <p className="text-[1.2rem] leading-relaxed text-gray-800 font-light">
-              <span className="font-bold text-gray-900">Tarek Kassar</span> is the Director of Operations at React, bringing over 20 years of experience as a strategic marketing and communications leader. Formerly Group Head of Marketing at Al Barakah Investment Holding, Kassar specializes in brand building, global marketing strategies, and driving innovative business and workforce growth.
+              <span className="font-bold text-gray-900">Tarek Kassar </span> is the Director of Operations at React, bringing over 20 years of experience as a strategic marketing and communications leader. Formerly Group Head of Marketing at Al Barakah Investment Holding, Kassar specializes in brand building, global marketing strategies, and driving innovative business and workforce growth.
             </p>
           </div>
         </div>
@@ -95,7 +95,8 @@ const WebinarLanding = () => {
           <div className="bg-[#7D5FFF]"></div>
           <div className="bg-white p-12 flex items-center justify-center border-b border-gray-100 text-center text-[#7D5FFF] font-bold text-3xl md:text-4xl leading-tight uppercase">Ai Innovation in<br/>Multinational<br/>Marketing</div>
           <div className="relative overflow-hidden group border-t border-gray-100"><div className="w-full h-full bg-cover bg-center grayscale" style={{ backgroundImage: `url(${tarekPhoto})` }}></div></div>
-          <div className="bg-[#1E1B4B] text-white p-12 flex items-center justify-center text-center uppercase tracking-[0.18em] leading-[1.7] font-light text-2xl">Tarek Kassar</div>
+          <div className="bg-[#1E1B4B] text-white p-12 flex items-center justify-center text-center uppercase tracking-[0.18em] leading-[1.7] font-light text-2xl">Tarek Kassar <br/> <br/> STRATEGY AND PERFORMANCE-DRIVEN GROWTH LEADER
+  </div>
         </div>
       </section>
 
@@ -103,15 +104,11 @@ const WebinarLanding = () => {
       <section className="grid grid-cols-1 md:grid-cols-2 min-h-[850px] bg-white border-t">
         <div className="grid grid-cols-2 h-[750px] md:h-auto min-h-[850px]">
           <div className="bg-[#3B82F6]"></div>
-          <div className="bg-[#F3F4F6] p-12 flex items-center justify-center border-b border-gray-200 text-center text-[#3B82F6] font-bold text-2xl md:text-3xl leading-tight uppercase">AI and Workforce TRANSFORMATION
-IN PHILIPPINE
+          <div className="bg-[#F3F4F6] p-12 flex items-center justify-center border-b border-gray-200 text-center text-[#3B82F6] font-bold text-2xl md:text-3xl leading-tight uppercase">AI and Workforce TRANSFORMATIONIN PHILIPPINE
 MARKETING<br/>Transformation</div>
           <div className="relative overflow-hidden group border-t border-gray-100"><div className="w-full h-full bg-cover grayscale bg-top" style={{ backgroundImage: `url(${janettePhoto})` }}></div></div>
-          <div className="bg-[#1E1B4B] text-white p-12 flex items-center justify-center text-center uppercase tracking-[0.18em] leading-[1.7] font-light text-2xl">Janette Toral,
-E-COMMERCE,
-AI & DIGITAL
-ECONOMY
-ADVISOR</div>
+          <div className="bg-[#1E1B4B] text-white p-12 flex items-center justify-center text-center uppercase tracking-[0.18em] leading-[1.7] font-light text-2xl">Janette Toral,<br/> <br/> MOTHER OF E-COMMERCE LAW IN THE PHILIPPINES,AI AND DIGITAL ECONOMY ADVISOR
+        </div>
         </div>
         <div className="p-10 md:p-24 flex flex-col justify-center items-center text-center relative text-gray-800">
           <h2 className="text-6xl md:text-8xl font-black text-[#3B82F6] uppercase leading-[0.9] mb-12 tracking-tighter">Guest<br />Speaker</h2>
@@ -125,8 +122,8 @@ coach, she helps teams navigate emerging
 technologies, platform shifts, and
 regulatory change. A key architect of the
 Philippine national digital policy, she
-recently authored the new book titled,
-Smarter with AI.  <span className="italic">Smarter with AI.</span>
+recently recently authored the book Smarter with AI.
+  <span className="italic">Smarter with AI.</span>
             </p>
           </div>
         </div>
@@ -156,7 +153,7 @@ non-profit organizations.
           <div className="bg-[#7D5FFF]"></div>
           <div className="bg-[#F3F4F6] p-12 flex items-center justify-center border-b border-gray-200 text-center text-[#7D5FFF] font-bold text-2xl md:text-3xl leading-tight uppercase">Panel Discussion:<br/>Ethical Ai IN MARKETING</div>
           <div className="relative overflow-hidden group border-t border-gray-100"><div className="w-full h-full bg-cover grayscale bg-top" style={{ backgroundImage: `url(${reyPhoto})` }}></div></div>
-          <div className="bg-[#1E1B4B] text-white p-12 flex items-center justify-center text-center uppercase tracking-[0.18em] leading-[1.7] font-light text-2xl">Dr. Rey Fremista <br/> FOUNDER &
+          <div className="bg-[#1E1B4B] text-white p-12 flex items-center justify-center text-center uppercase tracking-[0.18em] leading-[1.7] font-light text-2xl">Dr. Rey Fremista <br/><br/> FOUNDER AND
 CHIEF
 CONSULTANT,
 MINDGRIT
@@ -265,7 +262,7 @@ DATA MANAGEMENT</p><p className="text-gray-900 font-bold text-xl mt-4">DR. REY F
 
             </div>
             
-            <button className="bg-[#4285F4] hover:bg-blue-600 text-white font-black text-3xl px-20 py-8 shadow-xl uppercase tracking-tight transition-all">
+            <button className="bg-[#4285F4] text-white font-black text-3xl px-20 py-8 shadow-xl uppercase tracking-tight cursor-default">
               Register Now
             </button>
           </div>
