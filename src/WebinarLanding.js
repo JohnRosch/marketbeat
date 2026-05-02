@@ -17,7 +17,7 @@ const WebinarLanding = () => {
       
       {/* 1. HERO SECTION */}
       <header 
-        className="relative h-screen text-white p-10 md:p-20 flex flex-col justify-between overflow-hidden bg-[#000033]"
+        className="relative min-h-screen text-white p-10 md:p-20 flex flex-col justify-between bg-[#000033]"
         style={{
           backgroundImage: `linear-gradient(to right, rgba(0, 0, 51, 1) 40%, rgba(0, 0, 51, 0) 90%), url(${heroBackground})`,
           backgroundSize: 'cover',
@@ -57,13 +57,13 @@ const WebinarLanding = () => {
             </h4>
           </div>
 
- <div className="flex flex-col sm:flex-row gap-8">
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-8">
             {/* BUTTON 1 - PUP STUDENT */}
             <a 
                 href="https://docs.google.com/forms/d/e/1FAIpQLScQ_PtsVXD6vaYdZNxcDYHsONMldE4IJdAcpepxyodu005xCg/viewform" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="bg-blue-600 hover:bg-blue-700 text-white font-black py-6 px-12 rounded-sm transition-all transform hover:scale-105 uppercase tracking-widest text-sm text-center shadow-2xl block"
+                className="bg-blue-600 hover:bg-blue-700 text-white font-black py-5 px-8 md:px-12 rounded-sm transition-all transform hover:scale-105 uppercase tracking-widest text-sm text-center shadow-2xl block w-full sm:w-auto"
             >
                 I AM A PUP OUS MBA/DBA STUDENT
             </a>
@@ -73,11 +73,11 @@ const WebinarLanding = () => {
                 href="https://docs.google.com/forms/d/e/1FAIpQLSfXivsxt9WXZzW9BRy_ROwHdlvQsNSyE7u9psEQa0oipHHO3w/viewform" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="bg-purple-600 hover:bg-purple-700 text-white font-black py-6 px-12 rounded-sm transition-all transform hover:scale-105 uppercase tracking-widest text-sm text-center shadow-2xl block"
+                className="bg-purple-600 hover:bg-purple-700 text-white font-black py-5 px-8 md:px-12 rounded-sm transition-all transform hover:scale-105 uppercase tracking-widest text-sm text-center shadow-2xl block w-full sm:w-auto"
             >
                 I AM <span className="italic text-pink-300 px-1 font-bold">NOT</span> A PUP OUS STUDENT
             </a>
-</div>
+          </div>
         </div>
       </header>
 
@@ -122,8 +122,8 @@ coach, she helps teams navigate emerging
 technologies, platform shifts, and
 regulatory change. A key architect of the
 Philippine national digital policy, she
-recently recently authored the book Smarter with AI.
-  <span className="italic">Smarter with AI.</span>
+recently authored the book
+<span className="italic"> Smarter with AI.</span>
             </p>
           </div>
         </div>
@@ -179,7 +179,7 @@ MINDGRIT
             <div className="space-y-8 text-[1.1rem]">
               <p className="text-xl md:text-2xl font-medium leading-relaxed">In a world driven by AI and global trends, one thing matters: staying on beat.</p>
               <div className="space-y-6 leading-relaxed opacity-95">
-                <p>This webinar is organized by <span className="font-bold text-blue-300 uppercase">MarketBeat</span> as part of the course requirements for <strong>MBA 611 (Global Trends in Marketing)</strong></p>
+                <p>This webinar is organized by <span className="font-bold text-blue-300 uppercase">MarketBeat</span> as part of the course requirements for <strong>MBA 611 (Global Trends and Issues in Marketing Management)</strong></p>
                 <p>MarketBeat explores the latest developments
                     shaping the marketing profession globally, including
                     artificial Intelligence (AI) that is rapidly transforming
