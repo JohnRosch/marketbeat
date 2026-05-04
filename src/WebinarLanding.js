@@ -46,7 +46,7 @@ const WebinarLanding = () => {
 
           <div className="border-l-8 border-blue-600 pl-8">
             <p className="text-xl md:text-2xl font-bold uppercase tracking-wide text-blue-100 text-left">SPEAKERS: TAREK KASSAR | JANETTE TORAL | DR. REY FREMISTA</p>
-            <p className="text-lg md:text-xl opacity-90 mt-2 font-medium uppercase text-left text-white">Webinar Date • June 7, 2026 1:00 PM (PHT)</p>
+            <p className="text-lg md:text-xl opacity-90 mt-2 font-medium uppercase text-left text-white">Webinar Date • June 14, 2026 1:00 PM (PHT)</p>
           </div>
         </div>
 
@@ -262,9 +262,14 @@ DATA MANAGEMENT</p><p className="text-gray-900 font-bold text-xl mt-4">DR. REY F
 
             </div>
             
-            <button className="bg-[#4285F4] text-white font-black text-3xl px-20 py-8 shadow-xl uppercase tracking-tight cursor-default">
+            <a 
+              href="https://canva.link/xe6csmixkfaty0q" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-[#4285F4] hover:bg-[#3367D6] text-white font-black text-3xl px-20 py-8 shadow-xl uppercase tracking-tight transition-all transform hover:scale-105"
+            >
               Register Now
-            </button>
+            </a>
           </div>
         </div>
       </footer>
