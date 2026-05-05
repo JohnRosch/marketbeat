@@ -263,7 +263,7 @@ DATA MANAGEMENT</p><p className="text-gray-900 font-bold text-xl mt-4">DR. REY F
             </div>
             
             <a 
-              href="https://canva.link/xe6csmixkfaty0q" 
+              href="https://marketbeat.my.canva.site/registration/#page-0" 
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-[#4285F4] hover:bg-[#3367D6] text-white font-black text-3xl px-20 py-8 shadow-xl uppercase tracking-tight transition-all transform hover:scale-105"
