@@ -1,5 +1,6 @@
 import React from 'react';
-import heroBackground from './images/hero-bg.jpg'; 
+import { QRCodeSVG } from 'qrcode.react';
+import backdropImage from './images/backdrop.jpg'; 
 import tarekPhoto from './images/tarek.jpg'; 
 import janettePhoto from './images/janette.jpg'; 
 import reyPhoto from './images/rey.jpg'; 
@@ -8,78 +9,71 @@ import localImg from './images/local.jpg';
 import panelImg from './images/panel.jpg'; 
 import aboutBg from './images/aboutevent.jpg';
 import speakerSectionBg from './images/speaker.jpg'; 
-import footerLogoHero from './images/marketbeat.jpg'; 
-import footerAiHero from './images/ai.jpg'; 
+import footerImage from './images/footer.jpg';
 
 const WebinarLanding = () => {
   return (
-    <div className="relative w-full min-h-screen bg-white font-sans text-gray-900 block overflow-y-auto">
-      
-      {/* 1. HERO SECTION */}
-      <header 
-        className="relative min-h-screen text-white p-10 md:p-20 flex flex-col justify-between bg-[#000033]"
-        style={{
-          backgroundImage: `linear-gradient(to right, rgba(0, 0, 51, 1) 40%, rgba(0, 0, 51, 0) 90%), url(${heroBackground})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'right center',
-          backgroundRepeat: 'no-repeat'
-        }}
-      >
-        <div className="max-w-6xl mx-auto w-full relative z-10">
-          <h3 className="text-2xl font-black tracking-tighter text-white uppercase italic text-left">MARKET<span className="text-blue-500">BEAT</span></h3>
-        </div>
+      <div className="relative w-full min-h-screen bg-[#050014] font-sans text-gray-900 block overflow-y-auto">
+        
+        {/* 1. HERO SECTION WITH EDGE-TO-EDGE BACKDROP */}
+        <header 
+          className="relative w-full min-h-[85vh] flex flex-col justify-end items-center px-6 md:px-10 pb-16 pt-32"
+          style={{
+            backgroundImage: `url(${backdropImage})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center top',
+            backgroundRepeat: 'no-repeat'
+          }}
+        >
+          {/* Dark overlay gradient to ensure smooth transition to sections below if needed */}
+          <div className="absolute inset-0 bg-gradient-to-t from-[#050014] via-transparent to-transparent opacity-60 z-0 pointer-events-none" />
 
-        <div className="max-w-6xl mx-auto w-full relative z-10 py-10 text-left">
-          <h1 className="text-5xl md:text-8xl font-extrabold mb-8 leading-[1.2] tracking-tight text-white">
-            AI in Global Marketing:<br />
-            Innovation, Workforce,<br />
-            & Ethics
-          </h1>
+         
+        </header>
 
-          <div className="flex flex-wrap gap-4 text-sm md:text-base font-bold tracking-[0.2em] uppercase mb-12 opacity-80 border-b border-blue-500/30 pb-4">
-            <span>AI and Workforce Evolution</span>
-            <span className="text-blue-500">|</span>
-            <span>Data-Driven Advantage</span>
-            <span className="text-blue-500">|</span>
-            <span>Ethical AI Practices</span>
-          </div>
+        {/* 2. REGISTRATION ACTION SECTION */}
+        <section className="relative w-full bg-[#ffffff] py-12 px-6 flex flex-col items-center justify-center border-t border-gray-800">
+          <div className="max-w-md w-full text-center flex flex-col items-center gap-6">
+            
 
-          <div className="border-l-8 border-blue-600 pl-8">
-            <p className="text-xl md:text-2xl font-bold uppercase tracking-wide text-blue-100 text-left">SPEAKERS: TAREK KASSAR | JANETTE TORAL | DR. REY FREMISTA</p>
-            <p className="text-lg md:text-xl opacity-90 mt-2 font-medium uppercase text-left text-white">Webinar Date • June 14, 2026 1:00 PM (PHT)</p>
-          </div>
-        </div>
-
-        <div className="max-w-6xl mx-auto w-full relative z-10 mt-10 mb-20">
-          <div className="mb-6">
-            <h4 className="text-2xl md:text-3xl font-black italic uppercase tracking-widest text-white opacity-90 text-left">
-              Register Now <span className="text-blue-500 animate-pulse ml-2 text-3xl">▼</span>
-            </h4>
-          </div>
-
-          <div className="flex flex-col sm:flex-row gap-4 sm:gap-8">
-            {/* BUTTON 1 - PUP STUDENT */}
+            
+            {/* Unified Redirect Button Link */}
             <a 
-                href="https://docs.google.com/forms/d/e/1FAIpQLScQ_PtsVXD6vaYdZNxcDYHsONMldE4IJdAcpepxyodu005xCg/viewform" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="bg-blue-600 hover:bg-blue-700 text-white font-black py-5 px-8 md:px-12 rounded-sm transition-all transform hover:scale-105 uppercase tracking-widest text-sm text-center shadow-2xl block w-full sm:w-auto"
+              href="https://marketbeat.my.canva.site/registration/#page-0" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="w-full bg-blue-600 hover:bg-blue-700 text-white font-black py-4 px-8 rounded-md transition-all transform hover:scale-105 uppercase tracking-widest text-sm md:text-base text-center shadow-2xl block border border-blue-400/20"
             >
-                I AM A PUP OUS MBA/DBA STUDENT
+              Register Now
             </a>
 
-            {/* BUTTON 2 - NON-PUP STUDENT */}
-            <a 
-                href="https://docs.google.com/forms/d/e/1FAIpQLSfXivsxt9WXZzW9BRy_ROwHdlvQsNSyE7u9psEQa0oipHHO3w/viewform" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="bg-purple-600 hover:bg-purple-700 text-white font-black py-5 px-8 md:px-12 rounded-sm transition-all transform hover:scale-105 uppercase tracking-widest text-sm text-center shadow-2xl block w-full sm:w-auto"
-            >
-                I AM <span className="italic text-pink-300 px-1 font-bold">NOT</span> A PUP OUS STUDENT
-            </a>
+               {/* QR Code Container Block */}
+          <div className="flex flex-col items-center gap-3 bg-gray-50 p-6 rounded-xl border border-gray-100 shadow-sm transition-all hover:shadow-md">
+            <p className="text-xs md:text-sm font-bold uppercase tracking-wider text-gray-500">
+              Or scan to register via mobile
+            </p>
+            
+            <div className="bg-white p-4 rounded-lg shadow-inner">
+              <QRCodeSVG 
+                value="https://marketbeat.my.canva.site/registration/#page-0"
+                size={160}
+                bgColor={"#ffffff"}
+                fgColor={"#050014"}
+                level={"M"}
+                includeMargin={false}
+              />
+            </div>
+            
+            <span className="text-[11px] text-gray-400 font-mono select-all">
+              marketbeat.my.canva.site
+            </span>
           </div>
-        </div>
-      </header>
+
+          </div>
+        </section>
+
+
+
 
       {/* 2. KEYNOTE SPEAKER - TAREK (RESTORED BODY) */}
       <section className="grid grid-cols-1 md:grid-cols-2 min-h-[850px] bg-white border-t">
@@ -228,51 +222,47 @@ DATA MANAGEMENT</p><p className="text-gray-900 font-bold text-xl mt-4">DR. REY F
         </div>
       </section>
 
-      {/* 8. FOOTER - 100% FAIL-PROOF SVG ICONS */}
-      <footer className="w-full border-t border-gray-200 bg-white">
-        <div className="flex flex-col md:flex-row h-auto md:h-[500px]">
-          <div className="bg-[#0f172a] w-full md:w-[40%] flex items-center justify-center p-12">
-            <img src={footerLogoHero} alt="Branding" className="max-w-full max-h-[350px] object-contain" />
-          </div>
-          <div className="relative w-full md:w-[60%] h-[300px] md:h-full overflow-hidden">
-            <img src={footerAiHero} alt="AI" className="w-full h-full object-cover" />
-            <div className="absolute bottom-0 left-0 bg-[#FF49DB] text-white px-10 py-6 md:pr-32">
-               <h3 className="text-3xl md:text-4xl font-black uppercase tracking-tighter leading-none">Contact Information</h3>
-            </div>
-          </div>
-        </div>
 
-        <div className="py-20 px-10 md:px-24">
-          <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-12">
-            <div className="flex items-center gap-16">
-              
-              {/* FACEBOOK SVG */}
-              <a href="https://www.facebook.com/share/1EWkjeo3JV/" target="_blank" rel="noreferrer" className="text-[#1877F2] hover:opacity-80 transition-opacity">
-                <svg className="w-20 h-20 fill-current" viewBox="0 0 24 24">
-                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                </svg>
-              </a>
+        {/* ========================================== */}
+      {/* FIXED FOOTER SECTION - PRESERVES ALL DETAILS */}
+      {/* ========================================== */}
+        <footer className="relative w-full bg-white border-t border-gray-200">
+        <div className="w-full mx-auto relative">
+          
+          {/* Fluid image element ensuring zero cropping */}
+          <img 
+            src={footerImage} 
+            alt="MarketBeat Footer Information" 
+            className="w-full h-auto block object-contain"
+          />
 
-              {/* LINKEDIN SVG */}
-              <a href="https://www.linkedin.com/in/themarketbeat/" target="_blank" rel="noreferrer" className="text-[#0A66C2] hover:opacity-80 transition-opacity">
-                <svg className="w-20 h-20 fill-current" viewBox="0 0 24 24">
-                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                </svg>
-              </a>
-
-            </div>
-            
+          {/* OPTIONAL: Absolute hot-spots for the Facebook and LinkedIn links */}
+          {/* You can adjust the left percentages below to match your image exactly if needed */}
+          <div className="absolute bottom-[8%] left-[29%] w-[6%] h-[15%]">
             <a 
-              href="https://marketbeat.my.canva.site/registration/#page-0" 
+              href="https://www.facebook.com/share/1EWkjeo3JV/" 
               target="_blank" 
-              rel="noopener noreferrer"
-              className="bg-[#4285F4] hover:bg-[#3367D6] text-white font-black text-3xl px-20 py-8 shadow-xl uppercase tracking-tight transition-all transform hover:scale-105"
-            >
-              Register Now
-            </a>
+              rel="noopener noreferrer" 
+              className="block w-full h-full cursor-pointer"
+              title="Facebook"
+            ></a>
           </div>
+          
+          <div className="absolute bottom-[8%] left-[36%] w-[6%] h-[15%]">
+            <a 
+              href="https://www.linkedin.com/in/themarketbeat/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="block w-full h-full cursor-pointer"
+              title="LinkedIn"
+            ></a>
+          </div>
+
         </div>
       </footer>
+
+
+
     </div>
   );
 };
